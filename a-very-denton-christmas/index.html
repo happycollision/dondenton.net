@@ -12,6 +12,9 @@
 			body {
 				background: url('/i/snowfall.gif') repeat;
 			}
+			body * {
+				box-sizing: border-box;
+			}
 			.header {
 				background-color: #3E6725;
 				padding: 12px
@@ -31,8 +34,8 @@
 			a.button {
 				background-color: #A10614;
 				display: block;
-				width: 10em;
-				padding: 1em;
+				width: 11em;
+				padding: 1em 0.5em;
 				color: #fff;
 				border-radius: 8px;
 				text-decoration: none;
@@ -67,6 +70,24 @@
 			.content-wrapper {
 				padding: 0 12px;
 			}
+			ol {
+				width: 100%;
+				max-width: 600px;
+				margin: 70px auto 24px;
+				padding: 0;
+				list-style-position: inside;
+			}
+			ol li {
+				margin-bottom: 24px;
+			}
+			audio {
+				width: 100%;
+				margin: 8px auto;
+			}
+			.song-info {
+				font-size: 0.8em;
+				color: #444;
+			}
 		</style>
 		<meta name="og:title" content="A Very Denton Christmas">
 		<meta name="og:type" content="music.album">
@@ -89,6 +110,52 @@
 					<img src="https://www.dropbox.com/s/u6ye3pjed8ddckf/Very%20Denton%20Christmas%20Label%20Art.png?raw=1" alt="Album Cover" />
 				</div>
 			</div>
+			
+			<ol class="track-list">
+				<li>Holly Jolly Christmas
+					<div class="song-info">
+						Vocals: Don Denton, Guitar: Don Denton
+					</div>
+					<audio src="https://www.dropbox.com/s/obldrsuy43dr0ux/01%20Holly%20Jolly%20Christmas%201.mp3?dl=1" controls>
+						Sorry, your browser will not play this audio. You can download <a href="https://www.dropbox.com/s/obldrsuy43dr0ux/01%20Holly%20Jolly%20Christmas%201.mp3?dl=1">Holly Jolly Christmas</a> directly instead.
+					</audio>
+				</li>
+				<li>The Christmas Song
+					<div class="song-info">
+						Vocals: Daniel Ryan Denton, Guitar: Daniel Ryan Denton, Djembe: Don Denton
+					</div>
+					<audio src="https://www.dropbox.com/s/v1b238ht4hw0wo0/02%20The%20Christmas%20Song%201.mp3?dl=1" controls>
+						Sorry, your browser will not play this audio. You can download <a href="https://www.dropbox.com/s/v1b238ht4hw0wo0/02%20The%20Christmas%20Song%201.mp3?dl=1">The Christmas Song</a> directly instead.
+					</audio>
+				</li>
+				<li>Silver Bells
+					<div class="song-info">
+						Lead Vocals: Daniel Ryan Denton, Composition/Instrumentation: Daniel Ryan Denton, Background Vocals: Don Denton
+					</div>
+					<audio src="https://www.dropbox.com/s/ov6uazefmpu8pww/03%20Silver%20Bells%201.mp3?dl=1" controls>
+						Sorry, your browser will not play this audio. You can download <a href="https://www.dropbox.com/s/ov6uazefmpu8pww/03%20Silver%20Bells%201.mp3?dl=1">Silver Bells</a> directly instead.
+					</audio>
+				</li>
+				<li>Christmas Waltz
+					<div class="song-info">
+						Vocals: Don Denton, Piano Solo: Daniel Ryan Denton, Instrumentation: glorious karaoke ;-)
+					</div>
+					<audio src="https://www.dropbox.com/s/dwxeual9hlwqwhk/04%20Christmas%20Waltz%201.mp3?dl=1" controls>
+						Sorry, your browser will not play this audio. You can download <a href="https://www.dropbox.com/s/dwxeual9hlwqwhk/04%20Christmas%20Waltz%201.mp3?dl=1">Christmas Waltz</a> directly instead.
+					</audio>
+				</li>
+				<li>Have Yourself a Merry Little Christmas
+					<div class="song-info">
+						Vocals: Don Denton &amp; Daniel Ryan Denton, Arrangement: Daniel Ryan Denton
+					</div>
+					<audio src="https://www.dropbox.com/s/c7ktp9y50jmojtj/05%20Have%20Yourself%20a%20Merry%20Little%20Christmas.mp3?dl=1" controls>
+						Sorry, your browser will not play this audio. You can download <a href="https://www.dropbox.com/s/c7ktp9y50jmojtj/05%20Have%20Yourself%20a%20Merry%20Little%20Christmas.mp3?dl=1">Have Yourself a Merry Little Christmas</a> directly instead.
+					</audio>
+				</li>
+				
+			</ol>
+			
+			<a class="button" href="https://www.dropbox.com/sh/v2wzzai0bq7gaj1/AAAZC9KiuTYxcMxedfVJzYSsa?dl=1">Download the Album</a>
 		</div>
 		
 		<script>
