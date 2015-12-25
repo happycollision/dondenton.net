@@ -26,10 +26,7 @@
 			}
 			img {
 				display: block;
-				margin: 24px auto;
-				box-shadow: 5px 5px 18px #777;
-				max-width: 100%;
-				background-color: #fff;
+				width: 100%;
 			}
 			a.button {
 				background-color: #A10614;
@@ -45,6 +42,31 @@
 			a.button:hover {
 				background-color: #3E6725;
 			}
+			#album-container {
+				display: block;
+				position: relative;
+				width: 100%;
+				max-width: 600px;
+				margin: 24px auto;
+				box-shadow: 5px 5px 18px #777;
+			}
+			#album-container:before {
+				content: '';
+				display: block;
+				padding-top: 100%; /* 4:3 aspect ratio */
+			}
+			#album-container .content {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: silver; /* show me! */
+				display: block;
+			}
+			.content-wrapper {
+				padding: 0 12px;
+			}
 		</style>
 		<meta name="og:title" content="A Very Denton Christmas">
 		<meta name="og:type" content="music.album">
@@ -58,10 +80,16 @@
 			<h1>A Very Denton Christmas</h1>
 			<h2>Recorded for your listening pleasure in Fall 2011</h2>
 		</div>
-		<p>
+		
+		<div class="content-wrapper">
 			<a class="button" href="https://www.dropbox.com/sh/v2wzzai0bq7gaj1/AAAZC9KiuTYxcMxedfVJzYSsa?dl=1">Download the Album</a>
-		</p>
-		<img src="https://www.dropbox.com/s/u6ye3pjed8ddckf/Very%20Denton%20Christmas%20Label%20Art.png?raw=1" alt="Album Cover" />
+			
+			<div id="album-container">
+				<div class="content">
+					<img src="https://www.dropbox.com/s/u6ye3pjed8ddckf/Very%20Denton%20Christmas%20Label%20Art.png?raw=1" alt="Album Cover" />
+				</div>
+			</div>
+		</div>
 		
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
